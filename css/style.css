@@ -1,0 +1,64 @@
+#rainbowize {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+#uwu1 {
+	position: absolute;
+	bottom:20px;
+	right:20px;
+}
+
+#uwu2 {
+	position: absolute;
+	top:35px;
+	left:20px;
+}
+#uwu3 {
+	position:absolute;
+	top:400px;
+	right:580px;
+}
+#uwu4 {
+	position:absolute;
+	bottom:70px;
+	left:400px;
+}
+#uwu5 {
+	position:absolute;
+	top:50px;
+	right:50px;
+}
+
+#uwu2, #uwu3, #uwu4, #uwu5, #uwu6, .coolfacts p{
+	display: none;
+}
+
+#sources {
+	position:absolute;
+	bottom:15px;
+	right:540px;
+}
+#fact1 {
+	color: black;
+	display: inline;
+}
+
+#help {
+	position:absolute;
+	bottom:15px;
+	right:40px;
+	font-size:10px;
+}
+
+.coolfacts {
+	font-size:28px;
+	text-align:center;
+
+ 
+    font-family: 'Kurale', cursive;
+
+}

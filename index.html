@@ -1,0 +1,167 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+
+
+
+
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <title>coolfacts.com</title>
+
+<link rel="shortcut icon" type="image/png" href="bilder/cool.png"/>
+
+<link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body ng-app="app">
+<script>
+
+function color_from_hue(hue)
+{
+  var h = hue/60;
+  var c = 255;
+  var x = (1 - Math.abs(h%2 - 1))*255;
+  var color;
+ 
+  var i = Math.floor(h);
+  if (i == 0) color = rgb_to_hex(c, x, 0);
+  else if (i == 1) color = rgb_to_hex(x, c, 0);
+  else if (i == 2) color = rgb_to_hex(0, c, x);
+  else if (i == 3) color = rgb_to_hex(0, x, c);
+  else if (i == 4) color = rgb_to_hex(x, 0, c);
+  else color = rgb_to_hex(c, 0, x);
+ 
+  return color;
+}
+ 
+function rgb_to_hex(red, green, blue)
+{
+  var h = ((red << 16) | (green << 8) | (blue)).toString(16);
+  // add the beginning zeros
+  while (h.length < 6) h = '0' + h;
+  return '#' + h;
+}
+</script>
+
+<center>
+
+<h1 id="rainbowize"> Welcome to coolfacts.com, here we like cool facts like the fact that you're here right now. Hello. </h1> </center>
+
+<center>
+
+<div ng-controller="FactCtrl">
+<h7 ng-model="ShowFact.text"> You never know if someone reads bad, don't judge the big text you little blep. Also my site is really cool if you're a bully then you can fuck off <a href="https://sv-se.facebook.com/">here</a>. </h7> </center>
+
+
+
+<center>
+<img src="bilder/cool.png" onclick="showFact()">
+ 
+</center>
+</div>
+
+
+<button id="uwu6" onclick="popup()">uwu</button>
+
+
+<p id="uwu1">uwu </p>
+<p id="uwu2">uwu </p>
+<p id="uwu3">uwu </p>
+<p id="uwu4">uwu </p>
+<p id="uwu5">uwu </p>
+<p id="uwu6">uwu </p>
+
+<div class="coolfacts">
+<p id="a">Traps are gay. No questions. </p>
+<p id="fact2">Scotland's national animal is a unicorn. </p>
+<p id="fact3">There's a jellyfish called "the pink meanie". (Also known as Drymonema larsoni) </p>
+<p id="fact4">Every 13 seconds, a child goes missing in the US </p>
+<p id="fact5">In 1938, Hitler was Time magazine’s man of the year. </p>
+<p id="fact6">The human body is made of 58% hatred. </p>
+<p id="fact7">You just used 24 muscles to read this message. </p>
+<p id="fact8">Twins can actually feel each other miles away with extremely strong neurons that they posess. </p>
+<p id="fact9">Dabbing is not a religion. Case closed. </p>
+<p id="fact10">Diamonds are worth 3e per kilo in ghana. </p>
+<p id="fact11">Birds can taste fear. </p>
+<p id="fact12">Being black is actually illegal in 58 countries. </p>
+<p id="fact13">In Udachny it's illegal to utter the word "hamburger". </p>
+<p id="fact14">Its impossible to jump and sneeze at the same time. </p>
+<p id="fact15">Joseph stalin was actually a woman named linda. </p>
+<p id="fact16">The workers shall rise. </p>
+<p id="fact17">There's 47 species of dogs made everyday in argentina. </p>
+<p id="fact18">If you try to look at the back of your head while someone is holding it, you might acually succeed, but it might have some *ehem* unwanted consequences. Why don't you try? </p>
+<p id="fact19">German tanks doesn't use any diesel but actually polish tears as fuel. </p>
+<p id="fact20">According to a nigerian scientific its biologically impossible to be gay. </p>
+<p id="fact21">Listening to hardbass everyday boosts your ability to squat by 43%. </p>
+<p id="fact22">During year 1267 a sultan called mehmed the Ist tried to arrange a gay marriage for his son with a swedish viking because he thought the red beard was a godly sign of success. </p>
+<p id="fact23">It is possible to get rounder eyes by using glasses but ONLY if you don't take them off at night for at least 100 days. </p>
+<p id="fact24">You can fit 3 whole earths in the territory of russia. </p>
+<p id="fact25">Women will more likely orgasm if their partner has a symmetrical face. </p>
+<p id="fact26">Lenin got inspired by the sun to give the sickle and the hammer a golden colour because he said the sun shares its light with everyone and thus inspired the core rules of communism. </p>
+<p id="fact27">A band called Georgian Anarchy once made a song sung only using bottle caps and throwing bricks on ground. </p>
+<p id="fact28">In Denmark, pornography can be purchased at the local petrol station. </p>
+<p id="fact29">Pandas eat bamboo shots 90% of the time they're awake. </p>
+<p id="fact30">Sweden is populated of 60% mythical creatures. </p>
+<p id="fact31">Tracksuits increase your slavness by 59%. </p>
+<p id="fact32">If people who eat bananas turn you on, its not because you imagine fellatio but because you have a rare attraction to bananas called "nabanassium". </p>
+<p id="fact33">Professional artists actually choose their paint by the smell and taste of it. </p>
+<p id="fact34">Every 1/7 married man has fucked the friend of the cousin of his wife. </p>
+<p id="fact35">Traps aren't gay if they look like a girl. </p>
+<p id="fact36">Unsocial people feel superior to the surroundings humans 70% of the time. </p>
+<p id="fact37">Humans share parts of their DNA with retards. </p>
+<p id="fact38">It is scientificially proven that you cannot kill yourself without dying. </p>
+<p id="fact39">It has been proven in a recent study in Finland that angery scrubs contribute to the greenhouse effect by 13% every year. </p>
+<p id="fact40">Hands are more effective at wiping your face than clean paper towels. </p>
+<p id="fact41">Finland doesn't exist. </p>
+<p id="fact42">Santa is actually a girl named "Satanichia Kurumizawa McDowell" that got drunk one late december night and accidently gave two homeless kids her car and home keys. If you know where she is, please contact this number 116 000 </p>
+<p id="fact43">The only staff members of Coolfacts.com are a cow and a monkey because in here we like diversity.
+
+
+
+</div>
+
+<p id="sources"> Coolfacts.com facts are 100% true. Our words are backed with nuclear weapons. </p>
+
+<h9 id="help"> Zorbasio helped with stuff i guess. </h9>
+
+<div id="sound"></div>
+
+
+</body>
+</html>
+
